@@ -2,13 +2,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 60px;
+  height: 40px;
 }
 .social li {
   float: left;
   width: 60px;
   text-align: center;
   cursor: pointer;
+  padding: 10px 0;
 }
 
 /* for testing */
