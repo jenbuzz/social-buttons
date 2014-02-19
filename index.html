@@ -11,7 +11,10 @@
     <script src="social-buttons.js"></script>
     <script>
       $(function() {
-        $("#social").socialButtons(["facebook", "twitter", "googleplus"]);
+        $("#social").socialButtons({
+          socialNetworks: ["facebook", "twitter", "googleplus"],
+          url: "http://juhuu"
+        });
       })
     </script>
   </body>

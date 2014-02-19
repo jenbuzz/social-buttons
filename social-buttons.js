@@ -2,15 +2,18 @@ $.fn.socialButtons = function(options) {
   var config = {
     "facebook": {
       "shortname": "f",
-      "class": "social-facebook"
+      "class": "social-facebook",
+      "shareurl": "https://www.facebook.com/sharer/sharer.php?u="
     },
     "twitter": {
       "shortname": "t",
-      "class": "social-twitter"
+      "class": "social-twitter",
+      "shareurl": "http://twitter.com/share?text=hallo&url="
     },
     "googleplus": {
       "shortname": "g+",
-      "class": "social-googleplus"
+      "class": "social-googleplus",
+      "shareurl": "https://plus.google.com/share?url="
     }
   }
 
@@ -18,10 +21,10 @@ $.fn.socialButtons = function(options) {
 
   container.append("<ul></ul>");
 
-  $.each(options, function(index, value) {
+  $.each(options.socialNetworks, function(index, value) {
     if (config.hasOwnProperty(value)) {
       $("<li class=\""+config[value].class+"\">"+config[value].shortname+"</li>").appendTo(container.find("ul")).on("click", function() {
-        console.log("click on "+value);
+        window.open(config[value].shareurl+options.url, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600');
       });
     }
   });
