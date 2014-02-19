@@ -10,12 +10,16 @@
   text-align: center;
   cursor: pointer;
   padding: 10px 0;
+  color: #FFFFFF;
 }
 
-/* for testing */
-.social li:first-of-type {
-  background-color: #ededed;
+/* social network styles */
+.social-facebook {
+  background-color: #3B5998;
 }
-.social li:last-of-type {
-  background-color: red;
+.social-twitter {
+  background-color: #55ACEE;
+}
+.social-googleplus {
+  background-color: #D34836;
 }

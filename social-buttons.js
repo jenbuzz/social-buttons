@@ -20,7 +20,7 @@ $.fn.socialButtons = function(options) {
 
   $.each(options, function(index, value) {
     if (config.hasOwnProperty(value)) {
-      $("<li>"+config[value].shortname+"</li>").appendTo(container.find("ul")).on("click", function() {
+      $("<li class=\""+config[value].class+"\">"+config[value].shortname+"</li>").appendTo(container.find("ul")).on("click", function() {
         console.log("click on "+value);
       });
     }
