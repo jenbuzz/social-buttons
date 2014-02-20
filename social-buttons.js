@@ -8,7 +8,7 @@ $.fn.socialButtons = function(options) {
     "twitter": {
       "shortname": "t",
       "class": "social-twitter",
-      "shareurl": "http://twitter.com/share?text=hallo&url="
+      "shareurl": "http://twitter.com/share?text="+options.text+"&url="
     },
     "googleplus": {
       "shortname": "g+",
