@@ -23,7 +23,7 @@ $.fn.socialButtons = function(options) {
 
   $.each(options.socialNetworks, function(index, value) {
     if (config.hasOwnProperty(value)) {
-      $("<li class=\""+config[value].class+"\">"+config[value].shortname+"</li>").appendTo(container.find("ul")).on("click", function() {
+      $("<li class=\""+config[value].class+"\"></li>").appendTo(container.find("ul")).on("click", function() {
         window.open(config[value].shareurl+options.url, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
       });
     }
