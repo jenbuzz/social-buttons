@@ -5,7 +5,8 @@ $.fn.socialButtons = function(options) {
     text: ""
   };
   $.extend(this.options, options);
-
+  this.options.url = encodeURIComponent(this.options.url);
+  
   this.config = {
     facebook: {
       cssclass: "social-facebook",
