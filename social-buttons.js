@@ -1,4 +1,11 @@
 $.fn.socialButtons = function(options) {
+  this.options = {
+    socialNetworks: [],
+    url: "",
+    text: ""
+  };
+  $.extend(this.options, options);
+
   var config = {
     "facebook": {
       "shortname": "f",
