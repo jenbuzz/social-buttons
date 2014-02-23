@@ -6,32 +6,28 @@ $.fn.socialButtons = function(options) {
   };
   $.extend(this.options, options);
 
-  var config = {
-    "facebook": {
-      "shortname": "f",
-      "class": "social-facebook",
-      "shareurl": "https://www.facebook.com/sharer/sharer.php?u="+options.url
+  this.config = {
+    facebook: {
+      cssclass: "social-facebook",
+      shareurl: "https://www.facebook.com/sharer/sharer.php?u="+this.options.url
     },
-    "twitter": {
-      "shortname": "t",
-      "class": "social-twitter",
-      "shareurl": "http://twitter.com/share?text="+options.text+"&url="+options.url
+    twitter: {
+      cssclass: "social-twitter",
+      shareurl: "http://twitter.com/share?text="+this.options.text+"&url="+this.options.url
     },
-    "googleplus": {
-      "shortname": "g+",
-      "class": "social-googleplus",
-      "shareurl": "https://plus.google.com/share?url="+options.url
+    googleplus: {
+      cssclass: "social-googleplus",
+      shareurl: "https://plus.google.com/share?url="+this.options.url
     }
   }
 
   var container = $(this);
-
   container.append("<ul></ul>");
 
-  $.each(options.socialNetworks, function(index, value) {
-    if (config.hasOwnProperty(value)) {
-      $("<li class=\""+config[value].class+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-        window.open(config[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
+  $.each(this.options.socialNetworks, function(index, value) {
+    if (this.config.hasOwnProperty(value)) {
+      $("<li class=\""+this.config[value].cssclass+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+        window.open(this.config[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
       });
     }
   });
