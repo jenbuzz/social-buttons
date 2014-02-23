@@ -7,7 +7,7 @@ $.fn.socialButtons = function(options) {
   $.extend(this.options, options);
   this.options.url = encodeURIComponent(this.options.url);
   
-  this.config = {
+  var config = {
     facebook: {
       cssclass: "social-facebook",
       shareurl: "https://www.facebook.com/sharer/sharer.php?u="+this.options.url
@@ -26,9 +26,9 @@ $.fn.socialButtons = function(options) {
   container.append("<ul></ul>");
 
   $.each(this.options.socialNetworks, function(index, value) {
-    if (this.config.hasOwnProperty(value)) {
-      $("<li class=\""+this.config[value].cssclass+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-        window.open(this.config[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
+    if (config.hasOwnProperty(value)) {
+      $("<li class=\""+config[value].cssclass+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+        window.open(config[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
       });
     }
   });
