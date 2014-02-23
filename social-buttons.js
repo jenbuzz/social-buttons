@@ -6,6 +6,7 @@ $.fn.socialButtons = function(options) {
   };
   $.extend(this.options, options);
   this.options.url = encodeURIComponent(this.options.url);
+  this.options.text = encodeURIComponent(this.options.text);
   
   var config = {
     facebook: {
