@@ -2,7 +2,8 @@ $.fn.socialButtons = function(options) {
   this.options = {
     socialNetworks: [],
     url: "",
-    text: ""
+    text: "",
+    sharelabel: true
   };
   $.extend(this.options, options);
   this.options.url = encodeURIComponent(this.options.url);
@@ -24,7 +25,10 @@ $.fn.socialButtons = function(options) {
   }
 
   var container = $(this);
-  container.append("<label>SHARE</label><ul></ul><div></div>");
+  if (this.options.sharelabel) {
+    container.append("<label>SHARE</label>");
+  }
+  container.append("<ul></ul><div></div>");
 
   $.each(this.options.socialNetworks, function(index, value) {
     if (config.hasOwnProperty(value)) {
