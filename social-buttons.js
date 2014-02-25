@@ -24,7 +24,7 @@ $.fn.socialButtons = function(options) {
   }
 
   var container = $(this);
-  container.append("<ul></ul>");
+  container.append("<label>SHARE</label><ul></ul><div></div>");
 
   $.each(this.options.socialNetworks, function(index, value) {
     if (config.hasOwnProperty(value)) {
