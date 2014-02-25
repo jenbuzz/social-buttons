@@ -7,6 +7,9 @@
       sharelabel: true
     };
     $.extend(this.options, options);
+    if (this.options.url=="" && $("link[rel=canonical]").length) {
+      this.options.url = $("link[rel=canonical]").attr('href');
+    }
     this.options.url = encodeURIComponent(this.options.url);
     this.options.text = encodeURIComponent(this.options.text);
   
