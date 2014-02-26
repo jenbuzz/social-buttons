@@ -4,7 +4,8 @@
       socialNetworks: [],
       url: "",
       text: "",
-      sharelabel: true
+      sharelabel: true,
+      sharelabelText: "SHARE"
     };
     $.extend(this.options, options);
     if (this.options.url=="" && $("link[rel=canonical]").length) {
@@ -36,7 +37,7 @@
 
     var container = $(this);
     if (this.options.sharelabel) {
-      container.append("<label>SHARE</label>");
+      container.append("<label>"+this.options.sharelabelText+"</label>");
     }
     container.append("<ul></ul><div></div>");
 
