@@ -17,7 +17,7 @@
     this.options.url = encodeURIComponent(this.options.url);
     this.options.text = encodeURIComponent(this.options.text);
   
-    var config = {
+    var socialNetwork = {
       facebook: {
         title: "Share on Facebook",
         cssclass: "social-facebook",
@@ -43,9 +43,9 @@
       container.append("<ul></ul><div></div>");
 
       $.each(this.options.socialNetworks, function(index, value) {
-        if (config.hasOwnProperty(value)) {
-          $("<li class=\""+config[value].cssclass+"\" title=\""+config[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-            window.open(config[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
+        if (socialNetwork.hasOwnProperty(value)) {
+          $("<li class=\""+socialNetwork[value].cssclass+"\" title=\""+socialNetwork[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+            window.open(socialNetwork[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
           });
         }
       });
