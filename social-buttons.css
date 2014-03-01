@@ -39,6 +39,20 @@
   clear: both;
 }
 
+/* for vertical alignment */
+.social .vertical {
+  float: none;
+}
+.social .vertical-label {
+  padding: 6px;
+}
+.social .vertical-label:after{
+  display: none;
+}
+.social .vertical-ul {
+  margin: 14px 0 0 14px;
+}
+
 /* social network styles */
 .social-facebook {
   background: #3B5998 url("social-buttons.png") no-repeat 0 0;

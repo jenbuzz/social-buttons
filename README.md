@@ -17,7 +17,8 @@ social-buttons
       url: "http://juhuu",
       text: "hallo world",
       sharelabel: true,
-      sharelabelText: "SHARE"
+      sharelabelText: "SHARE",
+      verticalAlign: false
     });
   })
 </script>
