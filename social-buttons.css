@@ -43,14 +43,21 @@
 .social .vertical {
   float: none;
 }
-.social .vertical-label {
-  padding: 6px;
-}
-.social .vertical-label:after{
-  display: none;
+.social .vertical-label:after {
+  border-top: 8px solid #000000;
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
+  border-left: 8px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -36px;
+  top: 26px;
+  width: 0;
+  height: 0;
 }
 .social .vertical-ul {
-  margin: 14px 0 0 14px;
+  margin: 14px 0 0 24px;
 }
 
 /* social network styles */
