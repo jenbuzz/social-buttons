@@ -1,5 +1,5 @@
 (function($) {
-  $.fn.socialButtons = function(options) {
+  $.fn.socialButtons = function(options, socialNetwork) {
     var that = this;
   
     that.options = {
@@ -20,7 +20,7 @@
     that.options.url = encodeURIComponent(that.options.url);
     that.options.text = encodeURIComponent(that.options.text);
   
-    var socialNetwork = {
+    that.socialNetwork = {
       facebook: {
         title: "Share on Facebook",
         cssclass: "social-facebook",
@@ -36,7 +36,12 @@
         cssclass: "social-googleplus",
         shareurl: "https://plus.google.com/share?url="+that.options.url
       }
-    }
+    };
+	$.each(that.socialNetwork, function(index, value) {
+	  if (socialNetwork.hasOwnProperty(index)) {
+	    $.extend(that.socialNetwork[index], socialNetwork[index]);
+	  }
+	});
 
     if (that.options.socialNetworks.length>0) {
       var container = $(that);
@@ -53,11 +58,11 @@
       container.append(htmlUl);
 
       $.each(that.options.socialNetworks, function(index, value) {
-        if (socialNetwork.hasOwnProperty(value)) {
+        if (that.socialNetwork.hasOwnProperty(value)) {
           var classVertical = (verticalAlign) ? " vertical" : "";
 
-          $("<li class=\""+socialNetwork[value].cssclass+classVertical+"\" title=\""+socialNetwork[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-            window.open(socialNetwork[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
+          $("<li class=\""+that.socialNetwork[value].cssclass+classVertical+"\" title=\""+that.socialNetwork[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+            window.open(that.socialNetwork[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
           });
         }
       });
