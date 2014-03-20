@@ -24,17 +24,23 @@
       facebook: {
         title: "Share on Facebook",
         cssclass: "social-facebook",
-        shareurl: "https://www.facebook.com/sharer/sharer.php?u="+that.options.url
+        shareurl: "https://www.facebook.com/sharer/sharer.php?u="+that.options.url,
+		height: 600,
+		width: 600
       },
       twitter: {
         title: "Share on Twitter",
         cssclass: "social-twitter",
-        shareurl: "http://twitter.com/share?text="+that.options.text+"&url="+that.options.url
+        shareurl: "http://twitter.com/share?text="+that.options.text+"&url="+that.options.url,
+		height: 600,
+		width: 600
       },
       googleplus: {
         title: "Share on Google+",
         cssclass: "social-googleplus",
-        shareurl: "https://plus.google.com/share?url="+that.options.url
+        shareurl: "https://plus.google.com/share?url="+that.options.url,
+		height: 600,
+		width: 600
       }
     };
 	$.each(that.socialNetwork, function(index, value) {
@@ -62,7 +68,7 @@
           var classVertical = (verticalAlign) ? " vertical" : "";
 
           $("<li class=\""+that.socialNetwork[value].cssclass+classVertical+"\" title=\""+that.socialNetwork[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-            window.open(that.socialNetwork[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=600,width=600,top='+((screen.height/2)-300)+',left='+((screen.width/2)-300));
+            window.open(that.socialNetwork[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+that.socialNetwork[value].height+',width='+that.socialNetwork[value].width+',top='+((screen.height/2)-(that.socialNetwork[value].height/2))+',left='+((screen.width/2)-(that.socialNetwork[value].width/2)));
           });
         }
       });
