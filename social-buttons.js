@@ -1,6 +1,8 @@
 (function($) {
   $.fn.socialButtons = function(options) {
-    this.options = {
+    var that = this;
+  
+    that.options = {
       socialNetworks: [],
       url: "",
       text: "",
@@ -8,41 +10,41 @@
       sharelabelText: "SHARE",
       verticalAlign: false
     };
-    $.extend(this.options, options);
-    if (this.options.url=="" && $("link[rel=canonical]").length) {
-      this.options.url = $("link[rel=canonical]").attr('href');
+    $.extend(that.options, options);
+    if (that.options.url=="" && $("link[rel=canonical]").length) {
+      that.options.url = $("link[rel=canonical]").attr('href');
     }
-    if (this.options.text=="" && document.title!="") {
-      this.options.text = document.title;
+    if (that.options.text=="" && document.title!="") {
+      that.options.text = document.title;
     }
-    this.options.url = encodeURIComponent(this.options.url);
-    this.options.text = encodeURIComponent(this.options.text);
+    that.options.url = encodeURIComponent(that.options.url);
+    that.options.text = encodeURIComponent(that.options.text);
   
     var socialNetwork = {
       facebook: {
         title: "Share on Facebook",
         cssclass: "social-facebook",
-        shareurl: "https://www.facebook.com/sharer/sharer.php?u="+this.options.url
+        shareurl: "https://www.facebook.com/sharer/sharer.php?u="+that.options.url
       },
       twitter: {
         title: "Share on Twitter",
         cssclass: "social-twitter",
-        shareurl: "http://twitter.com/share?text="+this.options.text+"&url="+this.options.url
+        shareurl: "http://twitter.com/share?text="+that.options.text+"&url="+that.options.url
       },
       googleplus: {
         title: "Share on Google+",
         cssclass: "social-googleplus",
-        shareurl: "https://plus.google.com/share?url="+this.options.url
+        shareurl: "https://plus.google.com/share?url="+that.options.url
       }
     }
 
-    if (this.options.socialNetworks.length>0) {
-      var container = $(this);
-      var verticalAlign = this.options.verticalAlign;
+    if (that.options.socialNetworks.length>0) {
+      var container = $(that);
+      var verticalAlign = that.options.verticalAlign;
 
-      if (this.options.sharelabel) {
+      if (that.options.sharelabel) {
         var classVertical = (verticalAlign) ? " class=\"vertical vertical-label\"" : "";
-        var htmlLabel = "<label"+classVertical+">"+this.options.sharelabelText+"</label>";
+        var htmlLabel = "<label"+classVertical+">"+that.options.sharelabelText+"</label>";
         container.append(htmlLabel);
       }
 
@@ -50,7 +52,7 @@
       var htmlUl = "<ul"+classVertical+"></ul><div></div>";
       container.append(htmlUl);
 
-      $.each(this.options.socialNetworks, function(index, value) {
+      $.each(that.options.socialNetworks, function(index, value) {
         if (socialNetwork.hasOwnProperty(value)) {
           var classVertical = (verticalAlign) ? " vertical" : "";
 
