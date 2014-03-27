@@ -43,11 +43,11 @@
 		width: 600
       }
     };
-	$.each(that.socialNetwork, function(index, value) {
-	  if (socialNetwork.hasOwnProperty(index)) {
-	    $.extend(that.socialNetwork[index], socialNetwork[index]);
-	  }
-	});
+    $.each(that.socialNetwork, function(index, value) {
+      if (socialNetwork.hasOwnProperty(index)) {
+        $.extend(that.socialNetwork[index], socialNetwork[index]);
+      }
+    });
 
     if (that.options.socialNetworks.length>0) {
       var container = $(that);
