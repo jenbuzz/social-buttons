@@ -1,9 +1,11 @@
 (function($) {
   $.fn.socialButtons = function(options, socialNetwork) {
     var that = this;
+    var options = options || {};
+    var socialNetwork = socialNetwork || {};
   
     that.options = {
-      socialNetworks: [],
+      socialNetworks: ["facebook", "twitter", "googleplus"],
       url: "",
       text: "",
       sharelabel: true,
