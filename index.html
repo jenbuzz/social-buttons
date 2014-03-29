@@ -6,19 +6,50 @@
     <link rel="canonical" href="http://mywebsite.com" >
   </head>
   <body>
-    <div id="social" class="social"></div>
+    <h1>Default settings</h1>
+    <div id="social1" class="social"></div>
+
+    <h1>No sharelabel</h1>
+    <div id="social2" class="social"></div>
+
+    <h1>Vertical alignment</h1>
+    <div id="social3" class="social"></div>
+
+    <h1>Overwrite socialnetworks options</h1>
+    <div id="social4" class="social"></div>
 
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="social-buttons.js"></script>
     <script>
       $(function() {
-        $("#social").socialButtons({
+        $("#social1").socialButtons();
+
+        $("#social2").socialButtons({
+          socialNetworks: ["facebook", "twitter", "googleplus"],
+          url: "http://juhuu",
+          text: "hallo world",
+          sharelabel: false,
+        });
+
+        $("#social3").socialButtons({
           socialNetworks: ["facebook", "twitter", "googleplus"],
           url: "http://juhuu",
           text: "hallo world",
           sharelabel: true,
           sharelabelText: "SHARE",
-          verticalAlign: false
+          verticalAlign: true
+        });
+
+        $("#social4").socialButtons({}, {
+          facebook: {
+            title: "Share this awesome site on FB"
+          },
+          twitter: {
+            title: "Share this awesome site on Twitter"
+          },
+          googleplus: {
+            title: "Share this awesome site on G+"
+          }
         });
       })
     </script>
