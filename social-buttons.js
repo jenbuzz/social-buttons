@@ -27,22 +27,22 @@
         title: "Share on Facebook",
         cssclass: "social-facebook",
         shareurl: "https://www.facebook.com/sharer/sharer.php?u="+that.options.url,
-		height: 600,
-		width: 600
+	height: 600,
+	width: 600
       },
       twitter: {
         title: "Share on Twitter",
         cssclass: "social-twitter",
         shareurl: "http://twitter.com/share?text="+that.options.text+"&url="+that.options.url,
-		height: 600,
-		width: 600
+	height: 600,
+	width: 600
       },
       googleplus: {
         title: "Share on Google+",
         cssclass: "social-googleplus",
         shareurl: "https://plus.google.com/share?url="+that.options.url,
-		height: 600,
-		width: 600
+	height: 600,
+	width: 600
       }
     };
     $.each(that.socialNetwork, function(index, value) {
