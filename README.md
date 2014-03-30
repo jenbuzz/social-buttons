@@ -19,6 +19,16 @@ social-buttons
       sharelabel: true,
       sharelabelText: "SHARE",
       verticalAlign: false
+    }, {
+      facebook: {
+        title: "Share this awesome site on FB"
+      },
+      twitter: {
+        title: "Share this awesome site on Twitter"
+      },
+      googleplus: {
+        title: "Share this awesome site on G+"
+      }
     });
   })
 </script>
