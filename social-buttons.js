@@ -1,8 +1,8 @@
 (function($) {
-  $.fn.socialButtons = function(options, socialNetwork) {
+  $.fn.socialButtons = function(options, socialNetworks) {
     var that = this;
     var options = options || {};
-    var socialNetwork = socialNetwork || {};
+    var socialNetworks = socialNetworks || {};
   
     that.options = {
       socialNetworks: ["facebook", "twitter", "googleplus"],
@@ -24,7 +24,7 @@
     that.options.url = encodeURIComponent(that.options.url);
     that.options.text = encodeURIComponent(that.options.text);
   
-    that.socialNetwork = {
+    that.socialNetworks = {
       facebook: {
         title: "Share on Facebook",
         cssclass: "social-facebook",
@@ -47,9 +47,9 @@
 	width: 600
       }
     };
-    $.each(that.socialNetwork, function(index, value) {
-      if (socialNetwork.hasOwnProperty(index)) {
-        $.extend(that.socialNetwork[index], socialNetwork[index]);
+    $.each(that.socialNetworks, function(index, value) {
+      if (socialNetworks.hasOwnProperty(index)) {
+        $.extend(that.socialNetworks[index], socialNetworks[index]);
       }
     });
 
@@ -68,11 +68,11 @@
       container.append(htmlUl);
 
       $.each(that.options.socialNetworks, function(index, value) {
-        if (that.socialNetwork.hasOwnProperty(value)) {
+        if (that.socialNetworks.hasOwnProperty(value)) {
           var classVertical = (verticalAlign) ? " vertical" : "";
 
-          $("<li class=\""+that.socialNetwork[value].cssclass+classVertical+"\" title=\""+that.socialNetwork[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-            window.open(that.socialNetwork[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+that.socialNetwork[value].height+',width='+that.socialNetwork[value].width+',top='+((screen.height/2)-(that.socialNetwork[value].height/2))+',left='+((screen.width/2)-(that.socialNetwork[value].width/2)));
+          $("<li class=\""+that.socialNetworks[value].cssclass+classVertical+"\" title=\""+that.socialNetworks[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+            window.open(that.socialNetworks[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+that.socialNetworks[value].height+',width='+that.socialNetworks[value].width+',top='+((screen.height/2)-(that.socialNetworks[value].height/2))+',left='+((screen.width/2)-(that.socialNetworks[value].width/2)));
           });
         }
       });
