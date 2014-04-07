@@ -35,6 +35,11 @@
   cursor: pointer;
   color: #FFFFFF;
 }
+.social li:hover {
+  -webkit-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
+  -moz-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
+  box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
+}
 .social div {
   clear: both;
 }
