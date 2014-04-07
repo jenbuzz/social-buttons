@@ -1,4 +1,6 @@
 (function($) {
+  "use strict";
+
   $.fn.socialButtons = function(options, socialNetworks) {
     var that = this;
     var options = options || {};
