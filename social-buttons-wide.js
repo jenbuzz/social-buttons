@@ -5,7 +5,7 @@
     if (window.location.href!=undefined && document.title!=undefined) {
       var options = {
         url: encodeURIComponent(window.location.href),
-        text: encodeURIComponent(document.title),
+        text: encodeURIComponent(document.title)
       };
     } else {
       return;
