@@ -8,9 +8,7 @@
       url: "",
       text: "",
     };
-    if (that.options.url=="" && $("link[rel=canonical]").length) {
-      that.options.url = $("link[rel=canonical]").attr('href');
-    } else if (that.options.url=="" && !$("link[rel=canonical]").length && window.location.href!=undefined) {
+    if (that.options.url=="" && window.location.href!=undefined) {
       that.options.url = window.location.href;
     }
     if (that.options.text=="" && document.title!="") {
