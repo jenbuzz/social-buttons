@@ -2,19 +2,15 @@
   "use strict";
 
   $.fn.socialButtonsWide = function() {
-    var options = {
-      url: "",
-      text: "",
-    };
-    if (options.url=="" && window.location.href!=undefined) {
-      options.url = window.location.href;
+    if (window.location.href!=undefined && document.title!=undefined) {
+      var options = {
+        url: encodeURIComponent(window.location.href),
+        text: encodeURIComponent(document.title),
+      };
+    } else {
+      return;
     }
-    if (options.text=="" && document.title!="") {
-      options.text = document.title;
-    }
-    options.url = encodeURIComponent(options.url);
-    options.text = encodeURIComponent(options.text);
-
+    
     var socialNetworks = {
       facebook: {
         title: "Share on Facebook",
@@ -33,7 +29,6 @@
     };
 
     var container = $(this);
-
     var htmlUl = "<ul></ul><div></div>";
     container.append(htmlUl);
 
