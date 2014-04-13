@@ -33,3 +33,25 @@ social-buttons
   })
 </script>
 ```
+
+social-buttons-wide
+==============
+
+```
+<link rel="stylesheet" href="social-buttons-wide.css">
+```
+```
+<div style="width: 400px">
+  <img src="test-image.jpg" />
+  <div id="social" class="social"></div>
+</div>
+```
+```
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="social-buttons-wide.js"></script>
+<script>
+  $(function() {
+    $("#social").socialButtonsWide();
+  })
+</script>
+```
