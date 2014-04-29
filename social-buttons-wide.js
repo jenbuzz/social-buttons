@@ -29,11 +29,11 @@
     };
 
     var container = $(this);
-    var htmlUl = "<ul></ul><div></div>";
+    var htmlUl = "<ul></ul><div class=\"clearfix\"></div>";
     container.append(htmlUl);
 
     $.each(socialNetworks, function(index, value) {
-        $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+        $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"><div><span>"+value.title+"</span></div></li>").appendTo(container.find("ul")).on("click", function() {
           window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+value.height+',width='+value.width+',top='+((screen.height/2)-(value.height/2))+',left='+((screen.width/2)-(value.width/2)));
         });
     });

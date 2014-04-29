@@ -8,15 +8,27 @@
 .social li {
   float: left;
   width: 50%;
-  height: 32px;
   cursor: pointer;
+  text-align: center;
 }
-.social div {
+.social .clearfix {
   clear: both;
 }
-.social-facebook {
-  background: #3B5998 url("social-buttons.png") no-repeat center 0;
+.social span {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.social-twitter {
-  background: #55ACEE url("social-buttons.png") no-repeat center -52px;
+.social-center {
+  background-position: center;
+}
+.social-facebook div {
+  background: #3B5998 url("social-buttons.png") no-repeat left 0;
+  height: 24px;
+  padding-top: 6px;
+}
+.social-twitter div {
+  background: #55ACEE url("social-buttons.png") no-repeat left -52px;
+  height: 24px;
+  padding-top: 6px;
 }
