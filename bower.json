@@ -1,4 +1,15 @@
 {
   "name": "social-buttons-mix",
-  "version": "0.1"
+  "version": "0.1",
+  "ignore": [
+    "bower.json",
+    "demo.html",
+    "demo-wide.html",
+    "README.md",
+    "social-buttons.css",
+    "social-buttons.js",
+    "social-buttons-wide.css",
+    "social-buttons-wide.js",
+    "test-image.jpg"
+  ]
 }
