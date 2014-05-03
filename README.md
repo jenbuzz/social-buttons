@@ -1,3 +1,10 @@
+Installation
+==============
+
+```
+bower install social-buttons-mix
+```
+
 social-buttons
 ==============
 
