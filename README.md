@@ -62,3 +62,32 @@ social-buttons-wide
   })
 </script>
 ```
+
+social-buttons-pages
+==============
+
+```
+<link rel="stylesheet" href="social-buttons-pages.css">
+```
+```
+<div id="social" class="social"></div>
+```
+```
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="social-buttons-pages.js"></script>
+<script>
+  $(function() {
+    $("#social").socialButtonsPages({
+      facebook: {
+        pageurl: "https://www.facebook.com/Engineering"
+      },
+      twitter: {
+        pageurl: "https://twitter.com/twitter"
+      },
+      googleplus: {
+        pageurl: "https://plus.google.com/+GooglePlusDevelopers"
+      }
+    });
+  })
+</script>
+```
