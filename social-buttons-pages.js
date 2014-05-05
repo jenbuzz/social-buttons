@@ -1,8 +1,16 @@
 (function($) {
   "use strict";
 
-  $.fn.socialButtonsPages = function(socialNetworks) {
+  $.fn.socialButtonsPages = function(socialNetworks, options) {
     var that = this;
+    var options = options || {};
+    var socialNetworks = socialNetworks || {};
+
+    that.options = {
+      target: "_blank"
+    }
+    $.extend(that.options, options);
+
     that.socialNetworks = {
       facebook: {
         title: "Visit us on Facebook",
@@ -33,7 +41,7 @@
     $.each(that.socialNetworks, function(index, value) {
       if (value.pageurl!='') {
         $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-          document.location.href = value.pageurl;
+          window.open(value.pageurl, that.options.target);
         });
       }
     });

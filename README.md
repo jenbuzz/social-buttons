@@ -87,6 +87,8 @@ social-buttons-pages
       googleplus: {
         pageurl: "https://plus.google.com/+GooglePlusDevelopers"
       }
+    }, {
+      target: "_self"
     });
   })
 </script>
