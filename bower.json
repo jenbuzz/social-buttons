@@ -1,15 +1,18 @@
 {
   "name": "social-buttons-mix",
-  "version": "0.1",
+  "version": "0.2",
   "ignore": [
     "bower.json",
-    "demo.html",
-    "demo-wide.html",
-    "README.md",
-    "social-buttons.css",
-    "social-buttons.js",
-    "social-buttons-wide.css",
-    "social-buttons-wide.js",
-    "test-image.jpg"
+    "social-buttons/demo.html",
+    "social-buttons/social-buttons.css",
+    "social-buttons/social-buttons.js",
+    "social-buttons-wide/demo-wide.html",
+    "social-buttons-wide/social-buttons-wide.css",
+    "social-buttons-wide/social-buttons-wide.js",
+    "social-buttons-wide/test-image.jpg",
+    "social-buttons-pages/demo-pages.html",
+    "social-buttons-pages/social-buttons-pages.css",
+    "social-buttons-pages/social-buttons-pages.js",
+    "README.md"
   ]
 }
