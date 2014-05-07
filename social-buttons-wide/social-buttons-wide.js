@@ -2,11 +2,12 @@
   "use strict";
 
   $.fn.socialButtonsWide = function() {
-    if (window.location.href!=undefined && document.title!=undefined) {
+    if (window.location.href!==undefined && document.title!==undefined) {
       var options = {
         url: encodeURIComponent(window.location.href),
         text: encodeURIComponent(document.title)
       };
+      this.options = options;
     } else {
       return;
     }
@@ -15,14 +16,14 @@
       facebook: {
         title: "Share on Facebook",
         cssclass: "social-facebook",
-        shareurl: "https://www.facebook.com/sharer/sharer.php?u="+options.url,
+        shareurl: "https://www.facebook.com/sharer/sharer.php?u="+this.options.url,
         height: 600,
         width: 600
       },
       twitter: {
         title: "Share on Twitter",
         cssclass: "social-twitter",
-        shareurl: "http://twitter.com/share?text="+options.text+"&url="+options.url,
+        shareurl: "http://twitter.com/share?text="+this.options.text+"&url="+this.options.url,
         height: 600,
         width: 600
       }
@@ -37,5 +38,5 @@
           window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+value.height+',width='+value.width+',top='+((screen.height/2)-(value.height/2))+',left='+((screen.width/2)-(value.width/2)));
         });
     });
-  }
+  };
 })(jQuery);

@@ -1,10 +1,10 @@
 (function($) {
   "use strict";
 
-  $.fn.socialButtons = function(options, socialNetworks) {
+  $.fn.socialButtons = function(customOptions, customSocialNetworks) {
     var that = this;
-    var options = options || {};
-    var socialNetworks = socialNetworks || {};
+    var options = customOptions || {};
+    var socialNetworks = customSocialNetworks || {};
   
     that.options = {
       socialNetworks: ["facebook", "twitter", "googleplus"],
@@ -15,12 +15,12 @@
       verticalAlign: false
     };
     $.extend(that.options, options);
-    if (that.options.url=="" && $("link[rel=canonical]").length) {
+    if (that.options.url==="" && $("link[rel=canonical]").length) {
       that.options.url = $("link[rel=canonical]").attr('href');
-    } else if (that.options.url=="" && !$("link[rel=canonical]").length && window.location.href!=undefined) {
+    } else if (that.options.url==="" && !$("link[rel=canonical]").length && window.location.href!==undefined) {
       that.options.url = window.location.href;
     }
-    if (that.options.text=="" && document.title!="") {
+    if (that.options.text==="" && document.title!=="") {
       that.options.text = document.title;
     }
     that.options.url = encodeURIComponent(that.options.url);
@@ -60,8 +60,8 @@
       var verticalAlign = that.options.verticalAlign;
 
       if (that.options.sharelabel) {
-        var classVertical = (verticalAlign) ? " class=\"vertical vertical-label\"" : "";
-        var htmlLabel = "<label"+classVertical+">"+that.options.sharelabelText+"</label>";
+        var classVerticalLabel = (verticalAlign) ? " class=\"vertical vertical-label\"" : "";
+        var htmlLabel = "<label"+classVerticalLabel+">"+that.options.sharelabelText+"</label>";
         container.append(htmlLabel);
       }
 
@@ -79,5 +79,5 @@
         }
       });
     }
-  }
+  };
 })(jQuery);

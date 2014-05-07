@@ -1,10 +1,10 @@
 (function($) {
   "use strict";
 
-  $.fn.socialButtonsPages = function(socialNetworks, options) {
+  $.fn.socialButtonsPages = function(customSocialNetworks, customOptions) {
     var that = this;
-    that.options = options || {};
-    that.socialNetworks = socialNetworks || {};
+    var options = customOptions || {};
+    var socialNetworks = customSocialNetworks || {};
 
     that.options = {
       target: "_blank"
