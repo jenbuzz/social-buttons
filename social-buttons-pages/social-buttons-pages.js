@@ -3,12 +3,12 @@
 
   $.fn.socialButtonsPages = function(socialNetworks, options) {
     var that = this;
-    var options = options || {};
-    var socialNetworks = socialNetworks || {};
+    that.options = options || {};
+    that.socialNetworks = socialNetworks || {};
 
     that.options = {
       target: "_blank"
-    }
+    };
     $.extend(that.options, options);
 
     that.socialNetworks = {
@@ -39,11 +39,11 @@
     container.append(htmlUl);
 
     $.each(that.socialNetworks, function(index, value) {
-      if (value.pageurl!='') {
+      if (value.pageurl!=='') {
         $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
           window.open(value.pageurl, that.options.target);
         });
       }
     });
-  }
+  };
 })(jQuery);
