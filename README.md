@@ -5,21 +5,21 @@ Installation
 bower install social-buttons-mix
 ```
 
-social-buttons
+social-buttons-like
 ==============
 
 ```
-<link rel="stylesheet" href="social-buttons.css">
+<link rel="stylesheet" href="social-buttons-like.css">
 ```
 ```
 <div id="social" class="social"></div>
 ```
 ```
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src="social-buttons.js"></script>
+<script src="social-buttons-like.js"></script>
 <script>
   $(function() {
-    $("#social").socialButtons({
+    $("#social").socialButtonsLike({
       socialNetworks: ["facebook", "twitter", "googleplus"],
       url: "http://juhuu",
       text: "hallo world",

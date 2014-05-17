@@ -1,11 +1,11 @@
 {
   "name": "social-buttons-mix",
-  "version": "0.2",
+  "version": "0.2.1",
   "ignore": [
     "bower.json",
-    "social-buttons/demo.html",
-    "social-buttons/social-buttons.css",
-    "social-buttons/social-buttons.js",
+    "social-buttons-like/demo.html",
+    "social-buttons-like/social-buttons.css",
+    "social-buttons-like/social-buttons.js",
     "social-buttons-wide/demo-wide.html",
     "social-buttons-wide/social-buttons-wide.css",
     "social-buttons-wide/social-buttons-wide.js",
