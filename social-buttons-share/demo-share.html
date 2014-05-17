@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example: social-buttons-like</title>
-    <link rel="stylesheet" href="social-buttons-like.css">
+    <title>Example: social-buttons-share</title>
+    <link rel="stylesheet" href="social-buttons-share.css">
     <link rel="canonical" href="http://mywebsite.com" >
   </head>
   <body>
@@ -19,19 +19,19 @@
     <div id="social4" class="social"></div>
 
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="social-buttons-like.js"></script>
+    <script src="social-buttons-share.js"></script>
     <script>
       $(function() {
-        $("#social1").socialButtonsLike();
+        $("#social1").socialButtonsShare();
 
-        $("#social2").socialButtonsLike({
+        $("#social2").socialButtonsShare({
           socialNetworks: ["facebook", "twitter", "googleplus"],
           url: "http://juhuu",
           text: "hallo world",
           sharelabel: false,
         });
 
-        $("#social3").socialButtonsLike({
+        $("#social3").socialButtonsShare({
           socialNetworks: ["facebook", "twitter", "googleplus"],
           url: "http://juhuu",
           text: "hallo world",
@@ -40,7 +40,7 @@
           verticalAlign: true
         });
 
-        $("#social4").socialButtonsLike({}, {
+        $("#social4").socialButtonsShare({}, {
           facebook: {
             title: "Share this awesome site on FB"
           },

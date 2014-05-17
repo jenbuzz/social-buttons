@@ -1,7 +1,7 @@
 (function($) {
   "use strict";
 
-  $.fn.socialButtonsLike = function(customOptions, customSocialNetworks) {
+  $.fn.socialButtonsShare = function(customOptions, customSocialNetworks) {
     var that = this;
     var options = customOptions || {};
     var socialNetworks = customSocialNetworks || {};
