@@ -28,33 +28,35 @@
   margin: 0;
   padding: 0;
 }
-.social .social-wide-ul {
-  width: 100%;
-}
-.social .social-share-li {
+.social .social-share li {
   float: left;
   width: 40px;
   height: 32px;
   cursor: pointer;
   color: #FFFFFF;
 }
-.social .social-share-li:hover {
+.social .social-share li:hover {
   -webkit-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
   -moz-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
   box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
 }
-.social .social-wide-li {
+.social .social-wide {
+  width: 100%;
+}
+.social .social-wide li {
   float: left;
   width: 50%;
   cursor: pointer;
   text-align: center;
+  height: 24px;
+  padding-top: 6px;
 }
 .social span {
   color: #FFFFFF;
   font-size: 14px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.social .social-pages-li {
+.social .social-pages li {
   float: left;
   width: 40px;
   height: 32px;
@@ -64,7 +66,7 @@
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-.social .social-pages-li:hover {
+.social .social-pages li:hover {
   opacity: 0.8;
 }
 .social div {
@@ -73,7 +75,7 @@
 
 /* for vertical alignment */
 .social .vertical {
-  float: none;
+  float: none !important;
 }
 .social .vertical-label:after {
   border-top: 8px solid #000000;
@@ -93,10 +95,6 @@
 }
 
 /* social network styles */
-.social-network-wide {
-  height: 24px;
-  padding-top: 6px;
-}
 .social-facebook {
   background: #3B5998 url("social-buttons.png") no-repeat 0 0;
 }

@@ -96,24 +96,24 @@
 
     if (mode==="wide") {
       var container = $(this);
-      var htmlUl = "<ul class=\"social-wide-ul\"></ul><div class=\"clearfix\"></div>";
+      var htmlUl = "<ul class=\"social-wide\"></ul><div class=\"clearfix\"></div>";
       container.append(htmlUl);
 
       $.each(that.socialNetworks, function(index, value) {
         if (that.options.socialNetworks.indexOf(index)>=0) {
-          $("<li class=\""+value.cssclass+" social-wide-li social-network-wide\" title=\""+value.title+"\"><div><span>"+value.title+"</span></div></li>").appendTo(container.find("ul")).on("click", function() {
+          $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"><div><span>"+value.title+"</span></div></li>").appendTo(container.find("ul")).on("click", function() {
             window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+value.height+',width='+value.width+',top='+((screen.height/2)-(value.height/2))+',left='+((screen.width/2)-(value.width/2)));
           });
         }
       });
     } else if (mode==="pages") {
       var container = $(this);
-      var htmlUl = "<ul></ul><div class=\"clearfix\"></div>";
+      var htmlUl = "<ul class=\"social-pages\"></ul><div class=\"clearfix\"></div>";
       container.append(htmlUl);
 
       $.each(that.socialNetworks, function(index, value) {
         if (value.pageurl!=='') {
-          $("<li class=\""+value.cssclass+" social-pages-li\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+          $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
             window.open(value.pageurl, that.options.target);
           });
         }
@@ -129,15 +129,15 @@
           container.append(htmlLabel);
         }
 
-        var classVertical = (verticalAlign) ? " class=\"vertical vertical-ul\"" : "";
-        var htmlUl = "<ul"+classVertical+"></ul><div></div>";
+        var classVertical = (verticalAlign) ? " vertical vertical-ul" : "";
+        var htmlUl = "<ul class=\"social-share"+classVertical+"\"></ul><div></div>";
         container.append(htmlUl);
 
         $.each(that.options.socialNetworks, function(index, value) {
           if (that.socialNetworks.hasOwnProperty(value)) {
             var classVertical = (verticalAlign) ? " vertical" : "";
 
-            $("<li class=\""+that.socialNetworks[value].cssclass+classVertical+" social-share-li\" title=\""+that.socialNetworks[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+            $("<li class=\""+that.socialNetworks[value].cssclass+classVertical+"\" title=\""+that.socialNetworks[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
               window.open(that.socialNetworks[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+that.socialNetworks[value].height+',width='+that.socialNetworks[value].width+',top='+((screen.height/2)-(that.socialNetworks[value].height/2))+',left='+((screen.width/2)-(that.socialNetworks[value].width/2)));
             });
           }
