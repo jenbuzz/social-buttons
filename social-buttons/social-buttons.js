@@ -11,6 +11,7 @@
     if (mode==="wide") {
       if (window.location.href!==undefined && document.title!==undefined) {
         that.options = {
+          socialNetworks: ["facebook", "twitter"],
           url: encodeURIComponent(window.location.href),
           text: encodeURIComponent(document.title)
         };
@@ -44,24 +45,7 @@
       that.options.text = encodeURIComponent(that.options.text);
     }
 
-    if (mode==="wide") {
-      that.socialNetworks = {
-        facebook: {
-          title: "Share on Facebook",
-          cssclass: "social-facebook",
-          shareurl: "https://www.facebook.com/sharer/sharer.php?u="+this.options.url,
-          height: 600,
-          width: 600
-        },
-        twitter: {
-          title: "Share on Twitter",
-          cssclass: "social-twitter",
-          shareurl: "http://twitter.com/share?text="+this.options.text+"&url="+this.options.url,
-          height: 600,
-          width: 600
-        }
-      };
-    } else if (mode==="pages") {
+    if (mode==="pages") {
       that.socialNetworks = {
         facebook: {
           title: "Visit us on Facebook",
@@ -116,9 +100,11 @@
       container.append(htmlUl);
 
       $.each(that.socialNetworks, function(index, value) {
-        $("<li class=\""+value.cssclass+" social-wide-li social-network-wide\" title=\""+value.title+"\"><div><span>"+value.title+"</span></div></li>").appendTo(container.find("ul")).on("click", function() {
-          window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+value.height+',width='+value.width+',top='+((screen.height/2)-(value.height/2))+',left='+((screen.width/2)-(value.width/2)));
-        });
+        if (that.options.socialNetworks.indexOf(index)>=0) {
+          $("<li class=\""+value.cssclass+" social-wide-li social-network-wide\" title=\""+value.title+"\"><div><span>"+value.title+"</span></div></li>").appendTo(container.find("ul")).on("click", function() {
+            window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+value.height+',width='+value.width+',top='+((screen.height/2)-(value.height/2))+',left='+((screen.width/2)-(value.width/2)));
+          });
+        }
       });
     } else if (mode==="pages") {
       var container = $(this);
