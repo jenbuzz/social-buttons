@@ -94,8 +94,8 @@
       }
     });
 
+    var container = $(this);
     if (mode==="wide") {
-      var container = $(this);
       var htmlUl = "<ul class=\"social-wide\"></ul><div class=\"clearfix\"></div>";
       container.append(htmlUl);
 
@@ -107,7 +107,6 @@
         }
       });
     } else if (mode==="pages") {
-      var container = $(this);
       var htmlUl = "<ul class=\"social-pages\"></ul><div class=\"clearfix\"></div>";
       container.append(htmlUl);
 
@@ -120,7 +119,6 @@
       });
     } else {
       if (that.options.socialNetworks.length>0) {
-        var container = $(this);
         var verticalAlign = (that.options.verticalAlign!==undefined) ? that.options.verticalAlign : false;
 
         if (that.options.sharelabel) {
