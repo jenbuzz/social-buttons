@@ -1,12 +1,12 @@
 (function($) {
   "use strict";
 
-  $.fn.socialButtons = function(mode, customOptions, customSocialNetworks) {
+  $.fn.socialButtons = function(customMode, customOptions, customSocialNetworks) {
     var that = this;
     var options = customOptions || {};
     var socialNetworks = customSocialNetworks || {};
 
-    var mode = (mode!==undefined && (mode==="share" || mode==="wide" || mode==="pages")) ? mode : "share";
+    var mode = (customMode!==undefined && (customMode==="share" || customMode==="wide" || customMode==="pages")) ? customMode : "share";
 
     if (mode==="wide") {
       if (window.location.href!==undefined && document.title!==undefined) {
@@ -18,7 +18,7 @@
       } else {
         return;
       }
-    } else if(mode==="pages") {
+    } else if (mode==="pages") {
       that.options = {
         target: "_blank"
       };
@@ -68,21 +68,21 @@
         facebook: {
           title: "Share on Facebook",
           cssclass: "social-facebook",
-          shareurl: "https://www.facebook.com/sharer/sharer.php?u="+that.options.url,
+          shareurl: "https://www.facebook.com/sharer/sharer.php?u=" + that.options.url,
           height: 600,
           width: 600
         },
         twitter: {
           title: "Share on Twitter",
           cssclass: "social-twitter",
-          shareurl: "http://twitter.com/share?text="+that.options.text+"&url="+that.options.url,
+          shareurl: "http://twitter.com/share?text=" + that.options.text + "&url=" + that.options.url,
           height: 600,
           width: 600
         },
         googleplus: {
           title: "Share on Google+",
           cssclass: "social-googleplus",
-          shareurl: "https://plus.google.com/share?url="+that.options.url,
+          shareurl: "https://plus.google.com/share?url=" + that.options.url,
           height: 600,
           width: 600
         }
@@ -96,23 +96,30 @@
 
     var container = $(this);
     if (mode==="wide") {
-      var htmlUl = "<ul class=\"social-wide\"></ul><div class=\"clearfix\"></div>";
-      container.append(htmlUl);
+      var ulWide = "<ul class=\"social-wide\"></ul><div class=\"clearfix\"></div>";
+      container.append(ulWide);
 
       $.each(that.socialNetworks, function(index, value) {
         if (that.options.socialNetworks.indexOf(index)>=0) {
-          $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"><div><span>"+value.title+"</span></div></li>").appendTo(container.find("ul")).on("click", function() {
-            window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+value.height+',width='+value.width+',top='+((screen.height/2)-(value.height/2))+',left='+((screen.width/2)-(value.width/2)));
+          var liWide = "<li class=\"" + value.cssclass + "\" title=\"" + value.title + "\"><div><span>" + value.title + "</span></div></li>";
+          $(liWide).appendTo(container.find("ul")).on("click", function() {
+            var wideHeight = value.height;
+            var wideWidth = value.width;
+            var wideTop = ((screen.height/2)-(value.height/2));
+            var wideLeft = ((screen.width/2)-(value.width/2));
+
+            window.open(value.shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=' + wideHeight + ',width=' + wideWidth + ',top=' + wideTop + ',left=' + wideLeft);
           });
         }
       });
     } else if (mode==="pages") {
-      var htmlUl = "<ul class=\"social-pages\"></ul><div class=\"clearfix\"></div>";
-      container.append(htmlUl);
+      var ulPages = "<ul class=\"social-pages\"></ul><div class=\"clearfix\"></div>";
+      container.append(ulPages);
 
       $.each(that.socialNetworks, function(index, value) {
         if (value.pageurl!=='') {
-          $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+          var liPages = "<li class=\"" + value.cssclass + "\" title=\"" + value.title + "\"></li>";
+          $(liPages).appendTo(container.find("ul")).on("click", function() {
             window.open(value.pageurl, that.options.target);
           });
         }
@@ -123,20 +130,26 @@
 
         if (that.options.sharelabel) {
           var classVerticalLabel = (verticalAlign) ? " class=\"vertical vertical-label\"" : "";
-          var htmlLabel = "<label"+classVerticalLabel+">"+that.options.sharelabelText+"</label>";
+          var htmlLabel = "<label" + classVerticalLabel + ">" + that.options.sharelabelText + "</label>";
           container.append(htmlLabel);
         }
 
         var classVertical = (verticalAlign) ? " vertical vertical-ul" : "";
-        var htmlUl = "<ul class=\"social-share"+classVertical+"\"></ul><div></div>";
-        container.append(htmlUl);
+        var ulShare = "<ul class=\"social-share" + classVertical + "\"></ul><div></div>";
+        container.append(ulShare);
 
         $.each(that.options.socialNetworks, function(index, value) {
           if (that.socialNetworks.hasOwnProperty(value)) {
             var classVertical = (verticalAlign) ? " vertical" : "";
 
-            $("<li class=\""+that.socialNetworks[value].cssclass+classVertical+"\" title=\""+that.socialNetworks[value].title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
-              window.open(that.socialNetworks[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height='+that.socialNetworks[value].height+',width='+that.socialNetworks[value].width+',top='+((screen.height/2)-(that.socialNetworks[value].height/2))+',left='+((screen.width/2)-(that.socialNetworks[value].width/2)));
+            var liShare = "<li class=\"" + that.socialNetworks[value].cssclass+classVertical + "\" title=\"" + that.socialNetworks[value].title + "\"></li>";
+            $(liShare).appendTo(container.find("ul")).on("click", function() {
+              var shareHeight = that.socialNetworks[value].height;
+              var shareWidth = that.socialNetworks[value].width;
+              var shareTop = ((screen.height/2)-(that.socialNetworks[value].height/2));
+              var shareLeft = ((screen.width/2)-(that.socialNetworks[value].width/2));
+
+              window.open(that.socialNetworks[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=' + shareHeight + ',width=' + shareWidth + ',top=' + shareTop + ',left=' + shareLeft);
             });
           }
         });
