@@ -40,7 +40,7 @@
 
     $.each(that.socialNetworks, function(index, value) {
       if (value.pageurl!=='') {
-        $("<li class=\""+value.cssclass+"\" title=\""+value.title+"\"></li>").appendTo(container.find("ul")).on("click", function() {
+        $("<li class=\"" + value.cssclass + "\" title=\"" + value.title + "\"></li>").appendTo(container.find("ul")).on("click", function() {
           window.open(value.pageurl, that.options.target);
         });
       }
