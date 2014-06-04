@@ -3,24 +3,30 @@
   "version": "0.4.1",
   "ignore": [
     "bower.json",
+
     "social-buttons/demo.html",
     "social-buttons/social-buttons.css",
     "social-buttons/social-buttons.js",
     "social-buttons/test-image.jpg",
+
     "social-buttons-fa/demo-fa.html",
     "social-buttons-fa/social-buttons-fa.css",
     "social-buttons-fa/social-buttons-fa.js",
     "social-buttons-fa/test-image.jpg",
+
     "social-buttons-share/demo-share.html",
     "social-buttons-share/social-buttons-share.css",
     "social-buttons-share/social-buttons-share.js",
+
     "social-buttons-wide/demo-wide.html",
     "social-buttons-wide/social-buttons-wide.css",
     "social-buttons-wide/social-buttons-wide.js",
     "social-buttons-wide/test-image.jpg",
+
     "social-buttons-pages/demo-pages.html",
     "social-buttons-pages/social-buttons-pages.css",
     "social-buttons-pages/social-buttons-pages.js",
+
     "README.md"
   ]
 }
