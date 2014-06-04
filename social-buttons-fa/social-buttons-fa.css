@@ -1,0 +1,116 @@
+.social label {
+  float: left;
+  background-color: #EEEEEE;
+  opacity: 0.5;
+  border: 1px solid #000000;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 6px 0 6px 15px;
+  font-family: sans-serif,fantasy,serif;
+  margin-right: 9px;
+}
+.social label:after {
+  border-top: 8px solid rgba(0, 0, 0, 0);
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
+  border-left: 8px solid #000000;
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 17px;
+  top: 2px;
+  width: 0;
+  height: 0;
+}
+.social ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social .social-share li {
+  float: left;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.social .social-share li:hover {
+  -webkit-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
+  -moz-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
+  box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
+}
+.social .social-wide {
+  width: 100%;
+}
+.social .social-wide li {
+  float: left;
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+  height: 24px;
+  padding: 10px 0px 2px 0px;
+}
+.social span {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  margin: 0px 0px 0px 10px;
+}
+.social .social-pages li {
+  float: left;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+  color: #FFFFFF;
+  margin-right: 2px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.social .social-pages li:hover {
+  opacity: 0.8;
+}
+.social div {
+  clear: both;
+}
+
+/* for vertical alignment */
+.social .vertical {
+  float: none !important;
+}
+.social .vertical-label:after {
+  border-top: 8px solid #000000;
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
+  border-left: 8px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -36px;
+  top: 26px;
+  width: 0;
+  height: 0;
+}
+.social .vertical-ul {
+  margin: 14px 0 0 23px;
+}
+
+/* font-awesome */
+.fa {
+  padding: 9px 13px;
+}
+
+/* social network styles */
+.social-facebook {
+  background: #3B5998;
+  color: #FFFFFF;
+}
+.social-twitter {
+  background: #55ACEE;
+  color: #FFFFFF;
+}
+.social-googleplus {
+  background: #DD4B39;
+  color: #FFFFFF;
+}

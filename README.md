@@ -11,6 +11,12 @@ social-buttons
 $("#social1").socialButtons("share", {}, {}); // mode, options, socialNetworks
 ```
 
+social-buttons-fa (Font-Awesome Edition)
+==============
+```
+$("#social").socialButtonsFa("share", {}, {}); // mode, options, socialNetworks
+```
+
 social-buttons-share
 ==============
 

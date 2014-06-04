@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example: social-buttons</title>
+    <link rel="stylesheet" href="social-buttons-fa.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="canonical" href="http://mywebsite.com" >
+  </head>
+  <body>
+    <h1>Share</h1>
+    <div id="social1" class="social"></div>
+
+    <h1>Pages</h1>
+    <div id="social2" class="social"></div>
+
+    <h1>Wide</h1>
+    <div style="border: 1px solid #000000; width: 400px">
+      <img src="test-image.jpg" />
+      <div id="social3" class="social"></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="social-buttons-fa.js"></script>
+    <script>
+      $(function() {
+        $("#social1").socialButtonsFa();
+
+        $("#social2").socialButtonsFa(
+          "pages",
+          {
+            target: "_self"
+          },
+          {
+            facebook: {
+              pageurl: "https://www.facebook.com/Engineering"
+            },
+            twitter: {
+              pageurl: "https://twitter.com/twitter"
+            },
+            googleplus: {
+              pageurl: "https://plus.google.com/+GooglePlusDevelopers"
+            }
+          }
+        );
+
+        $("#social3").socialButtonsFa("wide");
+      })
+    </script>
+  </body>
+</html>
