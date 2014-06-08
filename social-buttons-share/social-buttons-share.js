@@ -78,7 +78,7 @@
           var shareHeight = that.socialNetworks[value].height;
           var shareWidth = that.socialNetworks[value].width;
           var shareTop = ((screen.height/2) - (that.socialNetworks[value].height/2));
-          var ShareLeft = ((screen.width/2)-(that.socialNetworks[value].width/2))
+          var shareLeft = ((screen.width/2)-(that.socialNetworks[value].width/2))
 
           $(liShare).appendTo(container.find("ul")).on("click", function() {
             window.open(that.socialNetworks[value].shareurl, '', 'menubar=no,toolbar=no,resizeable=no,scrollbars=no,height=' + shareHeight + ',width=' + shareWidth + ',top=' + shareTop + ',left=' + shareLeft);
