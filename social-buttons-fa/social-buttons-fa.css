@@ -101,10 +101,10 @@
   padding: 10px 0 0 15px;
 }
 .social .fa-facebook {
-  padding-left: 16px;
+  padding-left: 16px !important;
 }
 .social .fa-twitter, .social .fa-google-plus {
-  padding-left: 14px;
+  padding-left: 14px !important;
 }
 
 /* social network styles */
