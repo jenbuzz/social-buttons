@@ -100,10 +100,10 @@
 .social .fa {
   padding: 10px 0 0 15px;
 }
-.social .fa-twitter {
-  padding-left: 13px;
+.social .fa-facebook {
+  padding-left: 16px;
 }
-.social .fa-google-plus {
+.social .fa-twitter, .social .fa-google-plus {
   padding-left: 14px;
 }
 
