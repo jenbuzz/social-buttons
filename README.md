@@ -1,4 +1,4 @@
-social-buttons v0.4.6
+social-buttons v0.5
 ==============
 
 Installation
@@ -6,6 +6,11 @@ Installation
 
 ```
 bower install social-buttons-mix
+```
+
+Minify JavaScript and CSS using grunt:
+```
+grunt minify
 ```
 
 social-buttons
