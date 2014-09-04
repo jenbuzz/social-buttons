@@ -1,6 +1,6 @@
 {
   "name": "social-buttons-mix",
-  "version": "0.5",
+  "version": "0.6.0",
   "ignore": [
     "bower.json",
 
@@ -13,6 +13,10 @@
     "social-buttons-fa/social-buttons-fa.css",
     "social-buttons-fa/social-buttons-fa.js",
     "social-buttons-fa/test-image.jpg",
+
+    "social-buttons-fa/demo-bootstrap.html",
+    "social-buttons-fa/social-buttons-bootstrap.css",
+    "social-buttons-fa/social-buttons-bootstrap.js",
 
     "social-buttons-share/demo-share.html",
     "social-buttons-share/social-buttons-share.css",
