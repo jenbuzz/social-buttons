@@ -10,6 +10,10 @@ module.exports = function(grunt) {
         src: 'social-buttons-fa/social-buttons-fa.js',
         dest: 'social-buttons-fa/social-buttons-fa.min.js'
       },
+      social_buttons_bootstrap: {
+        src: 'social-buttons-bootstrap/social-buttons-bootstrap.js',
+        dest: 'social-buttons-bootstrap/social-buttons-bootstrap.min.js'
+      },
       social_buttons_pages: {
         src: 'social-buttons-pages/social-buttons-pages.js',
         dest: 'social-buttons-pages/social-buttons-pages.min.js'
@@ -36,6 +40,13 @@ module.exports = function(grunt) {
         cwd: 'social-buttons-fa/',
         src: ['social-buttons-fa.css'],
         dest: 'social-buttons-fa/',
+        ext: '.min.css'
+      },
+      social_buttons_bootstrap: {
+        expand: true,
+        cwd: 'social-buttons-bootstrap/',
+        src: ['social-buttons-bootstrap.css'],
+        dest: 'social-buttons-bootstrap/',
         ext: '.min.css'
       },
       social_buttons_pages: {
