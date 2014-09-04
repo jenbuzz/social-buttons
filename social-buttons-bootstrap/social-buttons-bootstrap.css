@@ -1,0 +1,39 @@
+.social label {
+  float: left;
+  background-color: #EEEEEE;
+  opacity: 0.5;
+  border: 1px solid #000000;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 6px 0 6px 15px;
+  font-family: sans-serif,fantasy,serif;
+  margin-right: 9px;
+}
+.social label:after {
+  border-top: 8px solid rgba(0, 0, 0, 0);
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
+  border-left: 8px solid #000000;
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 17px;
+  top: 2px;
+  width: 0;
+  height: 0;
+}
+.social ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social .social-share li, .social .social-pages li {
+  float: left;
+  cursor: pointer;
+  color: #FFFFFF;
+  margin-right: 2px;
+}
+.social div {
+  clear: both;
+}
