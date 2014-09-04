@@ -25,6 +25,14 @@ social-buttons-fa (Font-Awesome Edition)
 $("#social").socialButtonsFa("share", {}, {}); // mode, options, socialNetworks
 ```
 
+social-buttons-bootstrap (bootstrap-social Edition)
+==============
+https://github.com/lipis/bootstrap-social
+
+```
+$("#social").socialButtonsBootstrap("share", {}, {}); // mode, options, socialNetworks
+```
+
 social-buttons-share
 ==============
 
