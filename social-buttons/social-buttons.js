@@ -75,7 +75,7 @@
         twitter: {
           title: "Share on Twitter",
           cssclass: "social-twitter",
-          shareurl: "http://twitter.com/share?text=" + that.options.text + "&url=" + that.options.url,
+          shareurl: "https://twitter.com/intent/tweet?text=" + that.options.text + "&url=" + that.options.url,
           height: 600,
           width: 600
         },
