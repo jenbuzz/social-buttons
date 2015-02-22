@@ -13,6 +13,9 @@
   margin-right: 2px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+  -webkit-transition: opacity 0.35s;
+  -moz-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
 .social li:hover {
   opacity: 0.8;
