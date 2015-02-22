@@ -112,6 +112,9 @@
 .social .fa {
   padding: 10px 0 0 15px;
 }
+.social .social-twitter .fa {
+  padding: 9px 0 0 14px;
+}
 
 /* social network styles */
 .social-facebook {
