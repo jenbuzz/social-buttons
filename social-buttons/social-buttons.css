@@ -34,9 +34,9 @@
   height: 32px;
   cursor: pointer;
   color: #FFFFFF;
-  -webkit-transition: box-shadow 0.35s;
-  -moz-transition: box-shadow 0.35s;
-  transition: box-shadow 0.35s;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
 }
 .social .social-share li:hover {
   -webkit-box-shadow: inset 0px 0px 12px rgba(255,255,255,0.6);
@@ -53,9 +53,9 @@
   text-align: center;
   height: 24px;
   padding-top: 6px;
-  -webkit-transition: opacity 0.35s;
-  -moz-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .social .social-wide li:hover {
   opacity: 0.8;
@@ -74,9 +74,9 @@
   margin-right: 2px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  -webkit-transition: opacity 0.35s;
-  -moz-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .social .social-pages li:hover {
   opacity: 0.8;
