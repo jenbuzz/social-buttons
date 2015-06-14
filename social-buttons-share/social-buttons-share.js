@@ -15,7 +15,7 @@
       verticalAlign: false
     };
     $.extend(that.options, options);
-    if (that.options.url==="" && $("link[rel=canonical]").length) {
+    if (that.options.url==="" && $("link[rel=canonical]").length && $("link[rel=canonical]").attr('href').indexOf("://") != -1) {
       that.options.url = $("link[rel=canonical]").attr('href');
     } else if (that.options.url==="" && !$("link[rel=canonical]").length && window.location.href!==undefined) {
       that.options.url = window.location.href;
