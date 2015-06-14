@@ -1,4 +1,4 @@
-social-buttons v0.6.4
+social-buttons v0.6.5
 ==============
 
 Installation
