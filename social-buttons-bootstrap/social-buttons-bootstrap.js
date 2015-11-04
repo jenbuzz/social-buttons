@@ -50,7 +50,7 @@
         },
         googleplus: {
           title: "Visit us on Google+",
-          cssclass: "google-plus",
+          cssclass: "google",
           cssclassfa: "fa fa-google-plus",
           pageurl: ""
         }
@@ -75,7 +75,7 @@
         },
         googleplus: {
           title: "Share on Google+",
-          cssclass: "google-plus",
+          cssclass: "google",
           cssclassfa: "fa fa-google-plus",
           shareurl: "https://plus.google.com/share?url=" + that.options.url,
           height: 600,
