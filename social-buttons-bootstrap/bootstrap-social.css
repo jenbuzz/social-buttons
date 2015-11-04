@@ -1,21 +1,21 @@
 /*
  * Social Buttons for Bootstrap
  *
- * Copyright 2013-2014 Panayiotis Lipiridis
+ * Copyright 2013-2015 Panayiotis Lipiridis
  * Licensed under the MIT License
  *
  * https://github.com/lipis/bootstrap-social
  */
 
 .btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
-.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
-.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
-.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg>:first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm>:first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs>:first-child{line-height:20px;width:20px;font-size:1.2em}
 .btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding:0}.btn-social-icon>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
-.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
-.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
-.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
-.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg>:first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm>:first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs>:first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon>:first-child{border:none;text-align:center;width:100% !important}
 .btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
 .btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
 .btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
@@ -47,10 +47,10 @@
 .btn-github:active,.btn-github.active,.open>.dropdown-toggle.btn-github{background-image:none}
 .btn-github.disabled,.btn-github[disabled],fieldset[disabled] .btn-github,.btn-github.disabled:hover,.btn-github[disabled]:hover,fieldset[disabled] .btn-github:hover,.btn-github.disabled:focus,.btn-github[disabled]:focus,fieldset[disabled] .btn-github:focus,.btn-github.disabled:active,.btn-github[disabled]:active,fieldset[disabled] .btn-github:active,.btn-github.disabled.active,.btn-github[disabled].active,fieldset[disabled] .btn-github.active{background-color:#444;border-color:rgba(0,0,0,0.2)}
 .btn-github .badge{color:#444;background-color:#fff}
-.btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open>.dropdown-toggle.btn-google-plus{color:#fff;background-color:#c23321;border-color:rgba(0,0,0,0.2)}
-.btn-google-plus:active,.btn-google-plus.active,.open>.dropdown-toggle.btn-google-plus{background-image:none}
-.btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
-.btn-google-plus .badge{color:#dd4b39;background-color:#fff}
+.btn-google{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google:hover,.btn-google:focus,.btn-google:active,.btn-google.active,.open>.dropdown-toggle.btn-google{color:#fff;background-color:#c23321;border-color:rgba(0,0,0,0.2)}
+.btn-google:active,.btn-google.active,.open>.dropdown-toggle.btn-google{background-image:none}
+.btn-google.disabled,.btn-google[disabled],fieldset[disabled] .btn-google,.btn-google.disabled:hover,.btn-google[disabled]:hover,fieldset[disabled] .btn-google:hover,.btn-google.disabled:focus,.btn-google[disabled]:focus,fieldset[disabled] .btn-google:focus,.btn-google.disabled:active,.btn-google[disabled]:active,fieldset[disabled] .btn-google:active,.btn-google.disabled.active,.btn-google[disabled].active,fieldset[disabled] .btn-google.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
+.btn-google .badge{color:#dd4b39;background-color:#fff}
 .btn-instagram{color:#fff;background-color:#3f729b;border-color:rgba(0,0,0,0.2)}.btn-instagram:hover,.btn-instagram:focus,.btn-instagram:active,.btn-instagram.active,.open>.dropdown-toggle.btn-instagram{color:#fff;background-color:#305777;border-color:rgba(0,0,0,0.2)}
 .btn-instagram:active,.btn-instagram.active,.open>.dropdown-toggle.btn-instagram{background-image:none}
 .btn-instagram.disabled,.btn-instagram[disabled],fieldset[disabled] .btn-instagram,.btn-instagram.disabled:hover,.btn-instagram[disabled]:hover,fieldset[disabled] .btn-instagram:hover,.btn-instagram.disabled:focus,.btn-instagram[disabled]:focus,fieldset[disabled] .btn-instagram:focus,.btn-instagram.disabled:active,.btn-instagram[disabled]:active,fieldset[disabled] .btn-instagram:active,.btn-instagram.disabled.active,.btn-instagram[disabled].active,fieldset[disabled] .btn-instagram.active{background-color:#3f729b;border-color:rgba(0,0,0,0.2)}
@@ -63,10 +63,18 @@
 .btn-microsoft:active,.btn-microsoft.active,.open>.dropdown-toggle.btn-microsoft{background-image:none}
 .btn-microsoft.disabled,.btn-microsoft[disabled],fieldset[disabled] .btn-microsoft,.btn-microsoft.disabled:hover,.btn-microsoft[disabled]:hover,fieldset[disabled] .btn-microsoft:hover,.btn-microsoft.disabled:focus,.btn-microsoft[disabled]:focus,fieldset[disabled] .btn-microsoft:focus,.btn-microsoft.disabled:active,.btn-microsoft[disabled]:active,fieldset[disabled] .btn-microsoft:active,.btn-microsoft.disabled.active,.btn-microsoft[disabled].active,fieldset[disabled] .btn-microsoft.active{background-color:#2672ec;border-color:rgba(0,0,0,0.2)}
 .btn-microsoft .badge{color:#2672ec;background-color:#fff}
+.btn-odnoklassniki{color:#fff;background-color:#f4731c;border-color:rgba(0,0,0,0.2)}.btn-odnoklassniki:hover,.btn-odnoklassniki:focus,.btn-odnoklassniki:active,.btn-odnoklassniki.active,.open>.dropdown-toggle.btn-odnoklassniki{color:#fff;background-color:#d35b0a;border-color:rgba(0,0,0,0.2)}
+.btn-odnoklassniki:active,.btn-odnoklassniki.active,.open>.dropdown-toggle.btn-odnoklassniki{background-image:none}
+.btn-odnoklassniki.disabled,.btn-odnoklassniki[disabled],fieldset[disabled] .btn-odnoklassniki,.btn-odnoklassniki.disabled:hover,.btn-odnoklassniki[disabled]:hover,fieldset[disabled] .btn-odnoklassniki:hover,.btn-odnoklassniki.disabled:focus,.btn-odnoklassniki[disabled]:focus,fieldset[disabled] .btn-odnoklassniki:focus,.btn-odnoklassniki.disabled:active,.btn-odnoklassniki[disabled]:active,fieldset[disabled] .btn-odnoklassniki:active,.btn-odnoklassniki.disabled.active,.btn-odnoklassniki[disabled].active,fieldset[disabled] .btn-odnoklassniki.active{background-color:#f4731c;border-color:rgba(0,0,0,0.2)}
+.btn-odnoklassniki .badge{color:#f4731c;background-color:#fff}
 .btn-openid{color:#fff;background-color:#f7931e;border-color:rgba(0,0,0,0.2)}.btn-openid:hover,.btn-openid:focus,.btn-openid:active,.btn-openid.active,.open>.dropdown-toggle.btn-openid{color:#fff;background-color:#da7908;border-color:rgba(0,0,0,0.2)}
 .btn-openid:active,.btn-openid.active,.open>.dropdown-toggle.btn-openid{background-image:none}
 .btn-openid.disabled,.btn-openid[disabled],fieldset[disabled] .btn-openid,.btn-openid.disabled:hover,.btn-openid[disabled]:hover,fieldset[disabled] .btn-openid:hover,.btn-openid.disabled:focus,.btn-openid[disabled]:focus,fieldset[disabled] .btn-openid:focus,.btn-openid.disabled:active,.btn-openid[disabled]:active,fieldset[disabled] .btn-openid:active,.btn-openid.disabled.active,.btn-openid[disabled].active,fieldset[disabled] .btn-openid.active{background-color:#f7931e;border-color:rgba(0,0,0,0.2)}
 .btn-openid .badge{color:#f7931e;background-color:#fff}
+.btn-pinterest{color:#fff;background-color:#cb2027;border-color:rgba(0,0,0,0.2)}.btn-pinterest:hover,.btn-pinterest:focus,.btn-pinterest:active,.btn-pinterest.active,.open>.dropdown-toggle.btn-pinterest{color:#fff;background-color:#9f191f;border-color:rgba(0,0,0,0.2)}
+.btn-pinterest:active,.btn-pinterest.active,.open>.dropdown-toggle.btn-pinterest{background-image:none}
+.btn-pinterest.disabled,.btn-pinterest[disabled],fieldset[disabled] .btn-pinterest,.btn-pinterest.disabled:hover,.btn-pinterest[disabled]:hover,fieldset[disabled] .btn-pinterest:hover,.btn-pinterest.disabled:focus,.btn-pinterest[disabled]:focus,fieldset[disabled] .btn-pinterest:focus,.btn-pinterest.disabled:active,.btn-pinterest[disabled]:active,fieldset[disabled] .btn-pinterest:active,.btn-pinterest.disabled.active,.btn-pinterest[disabled].active,fieldset[disabled] .btn-pinterest.active{background-color:#cb2027;border-color:rgba(0,0,0,0.2)}
+.btn-pinterest .badge{color:#cb2027;background-color:#fff}
 .btn-reddit{color:#000;background-color:#eff7ff;border-color:rgba(0,0,0,0.2)}.btn-reddit:hover,.btn-reddit:focus,.btn-reddit:active,.btn-reddit.active,.open>.dropdown-toggle.btn-reddit{color:#000;background-color:#bcddff;border-color:rgba(0,0,0,0.2)}
 .btn-reddit:active,.btn-reddit.active,.open>.dropdown-toggle.btn-reddit{background-image:none}
 .btn-reddit.disabled,.btn-reddit[disabled],fieldset[disabled] .btn-reddit,.btn-reddit.disabled:hover,.btn-reddit[disabled]:hover,fieldset[disabled] .btn-reddit:hover,.btn-reddit.disabled:focus,.btn-reddit[disabled]:focus,fieldset[disabled] .btn-reddit:focus,.btn-reddit.disabled:active,.btn-reddit[disabled]:active,fieldset[disabled] .btn-reddit:active,.btn-reddit.disabled.active,.btn-reddit[disabled].active,fieldset[disabled] .btn-reddit.active{background-color:#eff7ff;border-color:rgba(0,0,0,0.2)}
