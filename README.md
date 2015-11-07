@@ -46,7 +46,7 @@ social-buttons-share
 <div id="social" class="social"></div>
 ```
 ```
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="social-buttons-share.js"></script>
 <script>
   $(function() {
@@ -85,7 +85,7 @@ social-buttons-wide
 </div>
 ```
 ```
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="social-buttons-wide.js"></script>
 <script>
   $(function() {
@@ -104,7 +104,7 @@ social-buttons-pages
 <div id="social" class="social"></div>
 ```
 ```
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="social-buttons-pages.js"></script>
 <script>
   $(function() {
