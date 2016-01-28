@@ -43,7 +43,7 @@ social-buttons-share
 <div id="social" class="social"></div>
 ```
 ```
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="social-buttons-share.js"></script>
 <script>
   $(function() {
