@@ -8,6 +8,9 @@ Installation
 bower install social-buttons-mix
 ```
 
+Development
+==============
+
 Minify JavaScript and CSS using grunt:
 ```
 grunt minify
