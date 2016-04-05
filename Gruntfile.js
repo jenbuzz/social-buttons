@@ -14,17 +14,9 @@ module.exports = function(grunt) {
         src: 'social-buttons-bootstrap/social-buttons-bootstrap.js',
         dest: 'social-buttons-bootstrap/social-buttons-bootstrap.min.js'
       },
-      social_buttons_pages: {
-        src: 'social-buttons-pages/social-buttons-pages.js',
-        dest: 'social-buttons-pages/social-buttons-pages.min.js'
-      },
       social_buttons_share: {
         src: 'social-buttons-share/social-buttons-share.js',
         dest: 'social-buttons-share/social-buttons-share.min.js'
-      },
-      social_buttons_wide: {
-        src: 'social-buttons-wide/social-buttons-wide.js',
-        dest: 'social-buttons-wide/social-buttons-wide.min.js'
       }
     },
     cssmin: {
@@ -49,25 +41,11 @@ module.exports = function(grunt) {
         dest: 'social-buttons-bootstrap/',
         ext: '.min.css'
       },
-      social_buttons_pages: {
-        expand: true,
-        cwd: 'social-buttons-pages/',
-        src: ['social-buttons-pages.css'],
-        dest: 'social-buttons-pages/',
-        ext: '.min.css'
-      },
       social_buttons_share: {
         expand: true,
         cwd: 'social-buttons-share/',
         src: ['social-buttons-share.css'],
         dest: 'social-buttons-share/',
-        ext: '.min.css'
-      },
-      social_buttons_wide: {
-        expand: true,
-        cwd: 'social-buttons-wide/',
-        src: ['social-buttons-wide.css'],
-        dest: 'social-buttons-wide/',
         ext: '.min.css'
       }
     }
