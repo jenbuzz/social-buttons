@@ -32,6 +32,7 @@
   float: left;
   width: 40px;
   height: 32px;
+  font-size: 20px;
   cursor: pointer;
   color: #FFFFFF;
   -webkit-transition: box-shadow 0.2s;
@@ -71,6 +72,7 @@
   float: left;
   width: 40px;
   height: 32px;
+  font-size: 20px;
   cursor: pointer;
   color: #FFFFFF;
   margin-right: 2px;
@@ -109,11 +111,14 @@
 }
 
 /* font-awesome */
-.social .fa {
-  padding: 10px 0 0 15px;
+.social .social-facebook .fa {
+  padding: 7px 0 0 13px;
 }
 .social .social-twitter .fa {
-  padding: 9px 0 0 14px;
+  padding: 7px 0 0 11px;
+}
+.social .social-googleplus .fa {
+  padding: 7px 0 0 12px;
 }
 
 /* social network styles */
