@@ -14,9 +14,9 @@
     "social-buttons-fa/social-buttons-fa.js",
     "social-buttons-fa/test-image.jpg",
 
-    "social-buttons-fa/demo-bootstrap.html",
-    "social-buttons-fa/social-buttons-bootstrap.css",
-    "social-buttons-fa/social-buttons-bootstrap.js",
+    "social-buttons-bootstrap/demo-bootstrap.html",
+    "social-buttons-bootstrap/social-buttons-bootstrap.css",
+    "social-buttons-bootstrap/social-buttons-bootstrap.js",
 
     "social-buttons-share/demo-share.html",
     "social-buttons-share/social-buttons-share.css",
