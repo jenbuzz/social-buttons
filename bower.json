@@ -22,6 +22,8 @@
     "social-buttons-share/social-buttons-share.css",
     "social-buttons-share/social-buttons-share.js",
 
-    "README.md"
+    "README.md",
+    "Gruntfile.js",
+    "package.json"
   ]
 }
