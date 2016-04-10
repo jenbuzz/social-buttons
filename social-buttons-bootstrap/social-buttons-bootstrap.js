@@ -97,7 +97,8 @@
       $.each(that.socialNetworks, function(index, value) {
         if (value.pageurl!=='') {
           var liPages = '<li><a href="' + value.pageurl + '" class="btn btn-social-icon btn-' + value.cssclass + '"><i class="' + value.cssclassfa + '"></i></a></li>';
-          $(liPages).appendTo(container.find('ul')).on('click', function() {
+          $(liPages).appendTo(container.find('ul')).on('click', function(e) {
+            e.preventDefault();
             window.open(value.pageurl, that.options.target);
           });
         }
