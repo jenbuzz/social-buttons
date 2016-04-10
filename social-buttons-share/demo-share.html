@@ -22,33 +22,33 @@
     <script src="social-buttons-share.js"></script>
     <script>
       $(function() {
-        $("#social1").socialButtonsShare();
+        $('#social1').socialButtonsShare();
 
-        $("#social2").socialButtonsShare({
-          socialNetworks: ["facebook", "twitter", "googleplus"],
-          url: "http://juhuu",
-          text: "hallo world",
+        $('#social2').socialButtonsShare({
+          socialNetworks: ['facebook', 'twitter', 'googleplus'],
+          url: 'http://juhuu',
+          text: 'hallo world',
           sharelabel: false,
         });
 
-        $("#social3").socialButtonsShare({
-          socialNetworks: ["facebook", "twitter", "googleplus"],
-          url: "http://juhuu",
-          text: "hallo world",
+        $('#social3').socialButtonsShare({
+          socialNetworks: ['facebook', 'twitter', 'googleplus'],
+          url: 'http://juhuu',
+          text: 'hallo world',
           sharelabel: true,
-          sharelabelText: "SHARE",
+          sharelabelText: 'SHARE',
           verticalAlign: true
         });
 
-        $("#social4").socialButtonsShare({}, {
+        $('#social4').socialButtonsShare({}, {
           facebook: {
-            title: "Share this awesome site on FB"
+            title: 'Share this awesome site on FB'
           },
           twitter: {
-            title: "Share this awesome site on Twitter"
+            title: 'Share this awesome site on Twitter'
           },
           googleplus: {
-            title: "Share this awesome site on G+"
+            title: 'Share this awesome site on G+'
           }
         });
       })
