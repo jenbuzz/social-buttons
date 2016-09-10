@@ -91,7 +91,7 @@
 
     var container = $(this);
     if (mode==='pages') {
-      var ulPages = '<ul class="social-pages"></ul><div class="clearfix"></div>';
+      var ulPages = '<ul class="social-pages"></ul>';
       container.append(ulPages);
 
       $.each(that.socialNetworks, function(index, value) {

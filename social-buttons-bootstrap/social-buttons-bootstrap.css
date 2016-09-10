@@ -23,13 +23,12 @@
   height: 0;
 }
 .social ul {
-  float: left;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .social .social-share li, .social .social-pages li {
-  float: left;
+  display: inline-block;
   cursor: pointer;
   color: #FFFFFF;
   margin-right: 2px;
